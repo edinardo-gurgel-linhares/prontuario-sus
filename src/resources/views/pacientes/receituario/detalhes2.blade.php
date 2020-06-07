@@ -40,7 +40,7 @@
             <section style="margin: 2px 5px; padding: 5px; border: 1px solid #999999; font-size:10pt; max-width:35%">
                 <h4 style="margin-top:-5px">IDENTIFICAÇÃO DO EMITENTE</h4>
                 <p>NOME: {{ $receita->autor->nome }}</p>
-                <p>CRM: {{ $receita->medico()                                                                       ->conselho }}</p>
+                <p>CRM: {{ $receita->medico->conselho }}</p>
                 <p>ENDEREÇO: {{ $receita->cabecalho->endereco }}</p>
                 <p>TELEFONE: {{ $receita->cabecalho->telefone }}</p>
             </section>
