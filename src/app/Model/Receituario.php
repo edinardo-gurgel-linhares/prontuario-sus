@@ -28,7 +28,7 @@ class Receituario extends Model
 
     public function medico()
     {
-        return Medico::where('usuario_id', $this->autor_id)->first();
+        return $this->belongsTo(Medico::class, 'autor_id', 'id');
     }
 
     public function paciente()
